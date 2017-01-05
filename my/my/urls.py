@@ -5,5 +5,6 @@ urlpatterns = [
  url(r'^admin/', admin.site.urls),
  url(r'^article/', include('article.urls', namespace='article')),
  url(r'^main/', include('main.urls', namespace='main')),
+ url(r'^share/',include('share.urls', namespace='share')),
  url(r'^.*', include('main.urls')),
 ]
